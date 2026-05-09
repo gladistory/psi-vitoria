@@ -65,7 +65,7 @@
                 </ul>
             </nav>
 
-            <a href="https://wa.me/5548996455430" class="btn btn-primary">Agendar Sessão</a>
+            <a href="https://wa.me/5548996455430" class="btn btn-primary btn-whats">Agendar Sessão</a>
 
             <div class="mobile-menu-icon">
                 <i class="ph ph-list"></i>
@@ -79,7 +79,7 @@
                 <h1>A mente também <br><em>pede respiro.</em></h1>
                 <p>Um espaço seguro de escuta, acolhimento e respeito para você se ouvir, se entender e se cuidar.</p>
                 <div class="cta-group">
-                    <a href="https://wa.me/5548996455430" class="btn btn-primary">Quero agendar meu horário</a>
+                    <a href="https://wa.me/5548996455430" class="btn btn-primary btn-whats">Quero agendar meu horário</a>
                     <a href="#sobre" class="btn btn-outline">Conhecer a Vitória</a>
                 </div>
             </div>
@@ -169,7 +169,7 @@
             <p>Horários de atendimentos de acordo com a disponibilidade na agenda. Entre em contato e agende seu
                 horário.</p>
 
-            <a href="https://wa.me/5548996455430" class="btn btn-secondary mt-2">Verificar disponibilidade</a>
+            <a href="https://wa.me/5548996455430" class="btn btn-secondary mt-2 btn-whats">Verificar disponibilidade</a>
         </div>
     </section>
 
@@ -236,7 +236,7 @@
                 <div class="social-links">
                     <a href="https://instagram.com/psi.vitoriasouzasantos" target="_blank"><i
                             class="ph ph-instagram-logo"></i> @psi.vitoriasouzasantos</a>
-                    <a href="https://wa.me/5548996455430" target="_blank"><i class="ph ph-whatsapp-logo"></i> (48) 99645-5430</a>
+                    <a href="https://wa.me/5548996455430" target="_blank" class="btn-whats"><i class="ph ph-whatsapp-logo"></i> (48) 99645-5430</a>
                 </div>
             </div>
             <div class="footer-nav">
@@ -250,11 +250,20 @@
             <p class="text-center copyright-text">Desenvolvido por <a href="https://www.instagram.com/programandoomundo/" target="_blank">Vinicius Santos</a></p>
         </div>
     </footer>
-    <a href="https://wa.me/5548996455430" target="_blank" class="whatsapp-float">
+    <a href="https://wa.me/5548996455430"  target="_blank" class="whatsapp-float btn-whats">
         <i class="ph ph-whatsapp-logo"></i>
     </a>
 
     <script src="index.js"></script>
+    <script>
+        document.querySelectorAll('.btn-whats').forEach(function (element) {
+            element.addEventListener('click', function () {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-18123951198/KrVzCNSspqQcEN6YlsJD'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
